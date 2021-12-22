@@ -57,10 +57,10 @@ app.use('/driver', driver)
 //chat api using socketio
 app.use('/chat', chat)
 
-
-let port = process.env.port || 8080
+const host = '0.0.0.0';
+let port =  8080
 //db connected and port
 connectDB();
-app.listen(port,()=>{
-    console.log(`server started at ${port}`);
+app.listen(port,host,()=>{
+    console.log(`server started at ${port} with host ${host}`);
 })
