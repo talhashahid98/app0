@@ -9,7 +9,7 @@
     "debug": "ndb server.js",
     "start": "node server.js"
   },
-  "author": "abrar",
+  "author": ".....",
   "license": "ISC",
   "dependencies": {
     "argon2": "^0.28.2",

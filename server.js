@@ -2,7 +2,7 @@ const mongoose = require('mongoose');
 const dotenv = require('dotenv');
 var socket = require('socket.io');
 dotenv.config({
-    path: './config.env'
+    path: './.env'
 });
 
 process.on('uncaughtException', err => {
