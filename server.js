@@ -58,9 +58,9 @@ app.use('/driver', driver)
 app.use('/chat', chat)
 
 
-
+let port = process.env.port || 8080
 //db connected and port
 connectDB();
-app.listen(process.env.port,()=>{
-    console.log("server started at 6000");
+app.listen(port,()=>{
+    console.log(`server started at ${port}`);
 })
