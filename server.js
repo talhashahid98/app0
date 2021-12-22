@@ -58,7 +58,7 @@ app.use('/driver', driver)
 app.use('/chat', chat)
 
 const host = '0.0.0.0';
-let port =  8080
+let port = process.env.port || 8080
 //db connected and port
 connectDB();
 app.listen(port,host,()=>{
